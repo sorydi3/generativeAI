@@ -1,4 +1,11 @@
-from pydantic import BaseModel, Field
+
+from lancedb.pydantic import LanceModel,Vector
+from lancedb.embeddings import get_registry
+
+
+
+
+
 
 
 
@@ -15,15 +22,17 @@ Neighborhood Description: Green Oaks is a close-knit, environmentally-conscious 
 """
 
 #Define a class called Listing
-class Listing(BaseModel):
+embeddings = get_registry().get("openai").create()
+class Listing(LanceModel):
     #Define the fields of the Listing class
-    neighborhood: str = Field(description="The name of the neighborhood") 
-    price: int = Field(description="The price of the home(without commas and dollar sign)")
-    bedrooms: int = Field(description="The number of bedrooms in the home")
-    bathrooms: int = Field(description="The number of bathrooms in the home")
-    house_size: int = Field(description="The size of the home in square feet")
-    description: str = Field(description="A description of the home")
-    neighborhood_description: str = Field(description="A description of the neighborhood")
+    neighborhood: str = embeddings.SourceField(description="The name of the neighborhood") 
+    price: int = embeddings.SourceField(description="The price of the home(without commas and dollar sign)")
+    bedrooms: int = embeddings.SourceField(description="The number of bedrooms in the home")
+    bathrooms: int = embeddings.SourceField(description="The number of bathrooms in the home")
+    house_size: int = embeddings.SourceField(description="The size of the home in square feet")
+    description: str = embeddings.SourceField(description="A description of the home")
+    neighborhood_description: str = embeddings.SourceField(description="A description of the neighborhood")
+    vector: Vector(embeddings.ndims()) = embeddings.VectorField(description="The vector representation of the listing.leave this field empty for now.")
     #Define a validator method called validate_price
     
 
