@@ -2,13 +2,6 @@
 from lancedb.pydantic import LanceModel,Vector
 from lancedb.embeddings import get_registry
 
-
-
-
-
-
-
-
 """
 Neighborhood: Green Oaks
 Price: 800,000
@@ -32,7 +25,7 @@ class Listing(LanceModel):
     house_size: int = embeddings.SourceField(description="The size of the home in square feet")
     description: str = embeddings.SourceField(description="A description of the home")
     neighborhood_description: str = embeddings.SourceField(description="A description of the neighborhood")
-    vector: Vector(embeddings.ndims()) = embeddings.VectorField(description="The vector representation of the listing.leave this field empty for now.")
+    vector: Vector(embeddings.ndims()) = embeddings.VectorField(description="The vector representation of the listing.PLEASE leave this FIELD EMPTY for now.")
     #Define a validator method called validate_price
     
 

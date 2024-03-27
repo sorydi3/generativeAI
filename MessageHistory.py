@@ -16,9 +16,6 @@ answers = [
     "A balance between suburban tranquility and access to urban amenities like restaurants and theaters."
 ]
 
-
-
-
 class CustomChatMessageHistory:
     def __init__(self):
         self.messages = ChatMessageHistory()
@@ -29,13 +26,14 @@ class CustomChatMessageHistory:
             self.messages.add_ai_message(question)
             self.messages.add_user_message(answer)
         
-
-
     def add_ai_message(self, message: str):
         self.messages.add_ai_message(message)
 
     def get_questions(self):
         return " ".join(questions)
+
+    def get_answers(self):
+        return " ".join(answers)
 
     def add_user_message(self, message: str):
         self.messages.add_user_message(message)

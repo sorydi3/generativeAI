@@ -1,0 +1,47 @@
+[
+    {
+        "neighborhood": "Downtown",
+        "price": 1500000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "house_size": 2000,
+        "description": "Beautiful modern home in the heart of the city",
+        "neighborhood_description": "Vibrant area with great restaurants and nightlife"
+    },
+    {
+        "neighborhood": "Suburbia",
+        "price": 800000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "house_size": 2500,
+        "description": "Spacious family home with large backyard",
+        "neighborhood_description": "Quiet neighborhood with excellent schools"
+    },
+    {
+        "neighborhood": "Waterfront",
+        "price": 3000000,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "house_size": 4000,
+        "description": "Luxurious waterfront property with stunning views",
+        "neighborhood_description": "Exclusive area with private beach access"
+    },
+    {
+        "neighborhood": "Historic District",
+        "price": 1200000,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "house_size": 1800,
+        "description": "Charming historic home with original features",
+        "neighborhood_description": "Quaint area with cobblestone streets and vintage shops"
+    },
+    {
+        "neighborhood": "Mountain View",
+        "price": 1000000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "house_size": 2200,
+        "description": "Cozy cabin with panoramic mountain views",
+        "neighborhood_description": "Serene location surrounded by nature"
+    }
+]
