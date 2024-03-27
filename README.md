@@ -5,7 +5,7 @@
 3. install the requirments by running the following command:
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 4. Run the following command to execute the program:
