@@ -14,7 +14,7 @@ pip3 install -r requirements.txt
 python3 HomeMatch.py # this will run the program and display the augmented listings in the terminal according to the user preferences
 ```
 
-5. To generate new listings run the following command:
+5. To generate new listings run the following command::
 
 ```bash
    TAILORED RESPONSE :
