@@ -10,6 +10,7 @@ def create_lancedb_database():
 
 def generate_listings(prompt:str = "5 random listing in json list. \n Note: you are a computer programe and do NOT add ANY extra data OR METADADA  and you are unable to express yourself. JUST THE OUTPUT" ) -> None:
     db = create_lancedb_database()
+    print("")
     generate_listings = GenerateListings()
     listings = generate_listings.generate_listings(prompt,db)
 
