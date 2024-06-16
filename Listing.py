@@ -3,7 +3,7 @@ from lancedb.pydantic import LanceModel,Vector
 from lancedb.embeddings import get_registry
 
 """
-Neighborhood: Green Oaks
+Neighborhood: Green Oakss
 Price: 800,000
 Bedrooms: 3
 Bathrooms: 2
