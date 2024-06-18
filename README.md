@@ -22,7 +22,7 @@ Based on the buyer\'s preferences, I would tailor the listings as follows:
 
 1. Downtown Property:
 - Price: $1,000,000
-- Bedrooms: 3
+- Bedrooms: 4
 - Bathrooms: 2
 - House Size: 2000 sq. ft.
 - Description: "Experience the best of urban living in this beautiful home located in the heart of the city. Enjoy the vibrant energy of downtown while still having access to great amenities and entertainment options. Perfect for those seeking a dynamic and connected lifestyle."
